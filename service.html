@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Logistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+  crossorigin="anonymous"
+/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+      <script src="https://kit.fontawesome.com/abc1234567.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="boost">
+  <header class="relative inset-x-0 top-0 z-50 ">
+   <nav aria-label="Global"
+  class="ghost flex items-center justify-between p-6 lg:px-8 fixed top-0 right-0 left-0 transition-colors duration-500 bg-transparent z-50">
+  
+  <!-- Logo -->
+  <div class="flex lg:flex-1">
+    <a href="#" class="-m-1.5 p-1.5">
+      <span class="sr-only">Cargo Logistic</span>
+      <img src="./ChatGPT Image Oct 7, 2025, 04_40_32 PM.png" alt="Cargo Logistic" class="h-8 w-auto" />
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="flex lg:hidden">
+    <button id="menu-btn" type="button"
+      class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 focus:outline-none">
+      <span class="sr-only">Open main menu</span>
+      <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        aria-hidden="true" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Desktop Menu -->
+  <div class="hidden lg:flex lg:gap-x-12">
+    <a href="#" class="text-sm font-semibold text-white">Home</a>
+    <a href="#" class="text-sm font-semibold text-white">About Us</a>
+    <a href="./contact.html" class="text-sm font-semibold text-white">Customer Service</a>
+    <a href="#" class="text-sm font-semibold text-white">Service</a>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+    <a href="#" class="text-sm font-semibold text-white">Track <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden lg:hidden bg-[#0F172A]/95 backdrop-blur-md absolute top-0 left-0 w-full py-6 mt-16">
+  <div class="flex flex-col items-center space-y-6">
+    <a href="#" class="text-white text-lg">Home</a>
+    <a href="#" class="text-white text-lg">About Us</a>
+    <a href="./contact.html" class="text-white text-lg">Customer Service</a>
+    <a href="#" class="text-white text-lg">Service</a>
+    <a href="#" class="text-white text-lg font-semibold">Track →</a>
+  </div>
+</div>
+    <el-dialog>
+      <dialog id="mobile-menu" class="m-0 p-0 backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline focus:outline-0">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Product</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+
+
+<section class="bg-[#F9FAFB] py-20 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4 font-montserrat">
+      Our <span class="text-[#2563EB]">Shipping Services</span>
+    </h2>
+    <p class="text-gray-600 mb-16 max-w-2xl mx-auto">
+      At Cargo Logistic, we provide fast, reliable, and secure global logistics solutions — tailored to meet every customer’s need.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <!-- Service 1 -->
+    <div class="bg-white rounded-2xl shadow-md p-8 hover:-translate-y-2 transition-all duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Parcel Delivery" class="w-16 mx-auto mb-6">
+      <h3 class="text-2xl font-semibold text-[#0F172A] mb-3">Document & Parcel Shipping</h3>
+      <p class="text-gray-600">
+        Send important documents and small parcels anywhere in the world quickly and safely.  
+        Track every delivery in real time with our smart tracking system.
+      </p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="bg-white rounded-2xl shadow-md p-8 hover:-translate-y-2 transition-all duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png" alt="Freight Shipping" class="w-16 mx-auto mb-6">
+      <h3 class="text-2xl font-semibold text-[#0F172A] mb-3">Freight & Cargo Transport</h3>
+      <p class="text-gray-600">
+        We handle heavy cargo by air, sea, or land — offering custom clearance and logistics support for businesses and exporters.
+      </p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="bg-white rounded-2xl shadow-md p-8 hover:-translate-y-2 transition-all duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Warehousing" class="w-16 mx-auto mb-6">
+      <h3 class="text-2xl font-semibold text-[#0F172A] mb-3">Warehousing & Storage</h3>
+      <p class="text-gray-600">
+        Secure, climate-controlled storage facilities for your goods.  
+        Perfect for temporary holding or long-term inventory management.
+      </p>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="bg-white rounded-2xl shadow-md p-8 hover:-translate-y-2 transition-all duration-300 md:col-span-3 md:max-w-3xl md:mx-auto">
+      <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="Door Delivery" class="w-16 mx-auto mb-6">
+      <h3 class="text-2xl font-semibold text-[#0F172A] mb-3">Door-to-Door Delivery</h3>
+      <p class="text-gray-600">
+        From pickup to final destination — we ensure every delivery arrives safely at your doorstep, on time and in perfect condition.
+      </p>
+    </div>
+  </div>
+</section>
+
+  
+<footer class="bg-[#0A1F44] text-white py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Logo & Description -->
+    <div>
+      <!-- 🧭 PLACE YOUR LOGO BELOW -->
+      <img src="./ChatGPT Image Oct 7, 2025, 04_40_32 PM.png" alt="Company Logo" class="w-32 mb-4" />
+      <!-- 🧭 REPLACE '/your-logo.png' WITH YOUR LOGO IMAGE PATH -->
+      
+      <p class="text-gray-300 text-sm">
+        Your trusted logistics partner for fast, safe, and reliable delivery worldwide.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-gray-300 text-sm">
+        <li><a href="./index.html" class="hover:text-[#B1442E]">Home</a></li>
+        <li><a href="#services" class="hover:text-[#B1442E]">Services</a></li>
+        <li><a href="#track" class="hover:text-[#B1442E]">Track Shipment</a></li>
+        <li><a href="#contact" class="hover:text-[#B1442E]">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Legal</h4>
+      <ul class="space-y-2 text-gray-300 text-sm">
+        <li><a href="#" class="hover:text-[#B1442E]">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-[#B1442E]">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-[#B1442E]" aria-label="Facebook"><i class="fab fa-facebook"></i>
+</a>
+        <a href="#" class="hover:text-[#B1442E]" aria-label="Twitter"><i class="fab fa-twitter"></i>
+</a>
+        <a href="#" class="hover:text-[#B1442E]" aria-label="Instagram"><i class="fab fa-instagram"></i>
+</a>
+        <a href="#" class="hover:text-[#B1442E]" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>
+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
+    © 2025 Cargo Logistics. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="./index.js"></script>
+</body>
+</html>
