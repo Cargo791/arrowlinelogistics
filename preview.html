@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Preview</title>
+<style>
+  :root{
+    --card-bg: #ffffff;
+    --card-radius: 18px;
+    --card-pad: 18px;
+    --text-color: #111;
+    --muted: #666;
+  }
+  body{ margin:0; font-family: sans-serif; }
+  .hero{ position: relative; max-width:900px; margin:auto; }
+  .hero-img{ width:100%; display:block; }
+  .quick-card{
+    position:absolute;
+    left:50%; transform:translateX(-50%);
+    bottom:-26px;
+    width:calc(100% - 32px);
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.12);
+  }
+  .quick-links{ display:flex; justify-content:space-around; }
+  .quick-link{ text-align:center; text-decoration:none; color:#111; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <img class="hero-img" src="/mnt/data/goo.jpg">
+  <div class="quick-card">
+    <div class="quick-links">
+      <a class="quick-link" href="#">Get a<br>quote</a>
+      <a class="quick-link" href="#">Ship<br>now</a>
+      <a class="quick-link" href="#">Locations</a>
+      <a class="quick-link" href="#">Support</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
