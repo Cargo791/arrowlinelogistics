@@ -51,7 +51,7 @@ form.addEventListener("submit", async (e) => {
           statusColor = "bg-blue-500";
           break;
         case "out for delivery":
-          percentage = 85;
+          percentage = 90;
           statusColor = "bg-yellow-400";
           break;
         case "delivered":
